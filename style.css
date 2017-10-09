@@ -1,0 +1,50 @@
+body {
+    margin: 0;
+    font-family: 'Roboto Condensed', sans-serif;
+    height: 1200px;
+}
+header {
+    display: flex;
+    flex-direction: column;
+    top: 0;
+    left: 0;
+    right: 0;
+    position: fixed;
+}
+header .top_row {
+    display: flex;
+    background-color: #323232;
+    color: #ababab;
+}
+header .top_row .top_row_wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 1200px;
+    margin: 0 auto;
+}
+header .top_row .top_row_wrapper .address,  header .top_row .top_row_wrapper .phone, header .top_row .top_row_wrapper .email{
+    display: flex;
+    align-items: center;
+}
+header .top_row .top_row_wrapper .address img, header .top_row .top_row_wrapper .phone img, header .top_row .top_row_wrapper .email img {
+    margin-right: 10px;
+    width: 20px;
+    height: 32px;
+}
+header .top_row .top_row_wrapper .phone a, header .top_row .top_row_wrapper .email a {
+    color: inherit;
+    text-decoration: none;
+}
+header .bottom_row {
+    display: flex;
+    height: 100%;
+    box-shadow: 0 4px 2px -2px rgba(0,0,0,0.3);
+}
+header .bottom_row .bottom_row_wrapper {
+    width: 1200px;
+    margin: 0 auto;
+}
+header .bottom_row .bottom_row_wrapper a img {
+    width: 287px;
+}
