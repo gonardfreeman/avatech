@@ -1,7 +1,7 @@
-body {
+body, html {
     margin: 0;
     font-family: 'Roboto Condensed', sans-serif;
-    height: 1200px;
+    height: 100%;
 }
 header {
     display: flex;
@@ -10,6 +10,8 @@ header {
     left: 0;
     right: 0;
     position: fixed;
+    background-color: #fff;
+    z-index: 3;
 }
 header .top_row {
     display: flex;
@@ -47,4 +49,127 @@ header .bottom_row .bottom_row_wrapper {
 }
 header .bottom_row .bottom_row_wrapper a img {
     width: 287px;
+}
+.parralax_1 {
+    background-image: url("06.jpg");
+    height: 500px; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.parallax { 
+    /* The image used */
+    background-image: url("06.jpg");
+
+    /* Full height */
+    height: 800px; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.parallax .content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+}
+.parallax .content .left {
+    color: #fff;
+}
+.parallax .content .right { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 400px;
+    height: 350px;
+    background-color: #fff;
+    margin-left: 20px;
+}
+.parallax .content .right button {
+    margin: 20px 0;
+    background-color: #3e467b;
+    border: none;
+    color: white;
+    width: 250px;
+    height: 40px;
+    border-radius: 10px 10px;
+}
+.parallax .content .right button:hover {
+    background-color: #cddc39;
+}
+.parallax .content .right button:focus {
+    outline: none;
+}
+.lorem_ipsum {
+    background-color: #3e467b;
+    position: relative;
+}
+.lorem_ipsum .coub {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: -15px;
+    left: 50%;
+    transform: rotate(45deg);
+    background-color: #3e467b;
+}
+.lorem_ipsum .wrapper {
+    width: 1200px;
+    margin: 0 auto;
+    color: #fff;
+    font-size: 25px;
+    padding: 40px 0;
+    height: 470px;
+}
+.lorem_ipsum .wrapper .top_text span {
+    font-size: 28px;
+    font-weight: bold;
+}
+.lorem_ipsum .wrapper .middle_text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+}
+.lorem_ipsum .wrapper .middle_text .middle_heading {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.lorem_ipsum .wrapper .middle_text .middle_content {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    font-size: 22px;
+} 
+.lorem_ipsum .wrapper .bottom_text {
+    margin: 40px 0;
+}
+footer {
+    background-color: #2f2f2f;
+    height: 200px;
+}
+footer .wrapper {
+    display: flex;
+    width: 1200px;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+footer .left p, footer .right p {
+    margin: 0;
+    color: #fff;
+}
+footer .right p a {
+    color: inherit;
+    text-decoration: none;
 }
